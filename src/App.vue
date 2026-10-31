@@ -64,10 +64,10 @@ function eliminarCarta(id) {
     <input type="checkbox" v-model="mostrarPendents" /> Mostrar només cartes pendents
   </label>
 
-  <TaskList
-    :cartes="cartes"
-    @canviarEstat="canviarEstat"
-    @eliminarCarta="eliminarCarta"
-  />
+ <TaskList
+  :cartes="cartesPendents"
+  @canviarEstat="canviarEstat"
+  @eliminarCarta="eliminarCarta"
+/>
   
 </template>
